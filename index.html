@@ -482,9 +482,11 @@
 
     <div class="w-100" style="background: white; padding: 3rem 2rem; box-sizing: border-box;">
         <h2 class="text-center mb-5"
-            style="color:#0099cc; font-weight: 700; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            style="color: var(--brand); font-weight: 700; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
             Contáctanos
         </h2>
+
+
         <div class="d-flex flex-column flex-md-row justify-content-center align-items-start gap-5"
             style="max-width: 1200px; margin: 0 auto;">
             <!-- Formulario -->
@@ -547,7 +549,8 @@
     </div>
 
 
-    <footer style="background-color: #007bff; color: white; padding: 1rem 0; margin-top: 2rem;">
+    <footer style="background-color: var(--brand-dark); color: white; padding: 1rem 0; margin-top: 2rem;">
+
         <div class="container d-md-flex justify-content-between align-items-center">
             <div>
                 <strong>Gasfitería Rápida</strong><br>
@@ -614,7 +617,7 @@
             }
 
             async function enviarFormulario() {
-                const url = 'https://formsubmit.co/ajax/danicontanza2201@gmail.com'
+                const url = 'https://formsubmit.co/ajax/gasfiteriarapida@gmail.com'
                 const data = new FormData(form)
                 data.append('_subject', 'Nuevo mensaje desde web - Gasfitería Rápida')
                 data.append('_captcha', 'false')
